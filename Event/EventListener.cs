@@ -3,7 +3,8 @@ using UnityEngine.Events;
 
 public class EventListener : MonoBehaviour
 {
-    [SerializeField] string EventDescription;
+    // class name . method name ;
+    [SerializeField] string [] EventDescription;
     [SerializeField] GameEvent gameEvent;
     [SerializeField] UnityEvent UnityEvent;
     private void OnEnable()
@@ -19,3 +20,4 @@ public class EventListener : MonoBehaviour
         UnityEvent?.Invoke();
     }
 }
+
