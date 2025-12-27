@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class EventListener : MonoBehaviour
 {
     // class name . method name ;
+    // each method that asigned to the unity event, the name of its class and method should write here.
     [SerializeField] string [] EventDescription;
     [SerializeField] GameEvent gameEvent;
     [SerializeField] UnityEvent UnityEvent;
@@ -20,4 +21,5 @@ public class EventListener : MonoBehaviour
         UnityEvent?.Invoke();
     }
 }
+
 
